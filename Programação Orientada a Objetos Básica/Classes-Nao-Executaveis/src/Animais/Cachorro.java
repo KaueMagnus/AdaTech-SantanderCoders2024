@@ -2,20 +2,15 @@ package Animais;
 
 import com.sun.org.apache.bcel.internal.generic.SWITCH;
 
-public class Cachorro {
+public class Cachorro extends Animal {
     // ATRIBUTOS
     static int numeroDeCachorros;
-    private String nome;
-    private String cor;
-    private int altura;
-    private double peso;
-    private int tamanhoDoRabo;
-    private String estadoDeEspirito;
 
-    // CONSTRUTOR PADRÃO
+    private int tamanhoDoRabo;
 
     // CONSTRUTORES ADICIONADOS
     public Cachorro(String nome, String cor, int altura, double peso, int tamanhoDoRabo, String estadoDeEspirito) {
+        super(nome, cor, peso);
         this.nome = nome;
         this.cor = cor;
         this.altura = altura;
@@ -80,13 +75,6 @@ public class Cachorro {
         return estadoDeEspirito;
     }
 
-
-    public void comer() {}
-
-    public void latir() {
-        System.out.println("AU AU");
-    }
-
     public String pegar() {
         return "Pegou a bolinha";
     }
@@ -115,5 +103,10 @@ public class Cachorro {
         return "Cachorro{" +
                 "nome='" + nome + '\'' +
                 '}';
+    }
+
+    @Override
+    public void soar() {
+        System.out.println("AU AU");
     }
 }
