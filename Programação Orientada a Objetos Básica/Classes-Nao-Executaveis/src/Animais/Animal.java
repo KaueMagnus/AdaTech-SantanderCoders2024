@@ -1,6 +1,8 @@
 package Animais;
 
 public abstract class Animal {
+
+    // Attributes
     static int numeroDeCachorros;
     protected String nome;
     protected String cor;
@@ -9,12 +11,14 @@ public abstract class Animal {
     protected int tamanhoDoRabo;
     protected String estadoDeEspirito;
 
+    // Constructor
     public Animal(String nome, String cor, double peso) {
         this.nome = nome;
         this.cor = cor;
         this.peso = peso;
     }
 
+    // Methods
     public static int getNumeroDeCachorros() {
         return numeroDeCachorros;
     }

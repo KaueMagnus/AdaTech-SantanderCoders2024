@@ -5,6 +5,7 @@ import Animais.Cachorro;
 
 public class Petshop {
 
+    // Petshop Methods
     public void darBanho(Animal animal){
         animal.setEstadoDeEspirito("Limpo");
     }

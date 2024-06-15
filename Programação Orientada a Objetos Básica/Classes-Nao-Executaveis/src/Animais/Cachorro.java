@@ -3,12 +3,12 @@ package Animais;
 import com.sun.org.apache.bcel.internal.generic.SWITCH;
 
 public class Cachorro extends Animal {
-    // ATRIBUTOS
+    // Attributes
     static int numeroDeCachorros;
 
     private int tamanhoDoRabo;
 
-    // CONSTRUTORES ADICIONADOS
+    // Constructor
     public Cachorro(String nome, String cor, int altura, double peso, int tamanhoDoRabo, String estadoDeEspirito) {
         super(nome, cor, peso);
         this.nome = nome;
@@ -21,7 +21,7 @@ public class Cachorro extends Animal {
         numeroDeCachorros++;
     }
 
-    // MÉTODOS
+    // Methods
 
     public static int getNumeroDeCachorros() {
         return numeroDeCachorros;
@@ -74,6 +74,8 @@ public class Cachorro extends Animal {
     public String getEstadoDeEspirito() {
         return estadoDeEspirito;
     }
+
+    // Object methods
 
     public String pegar() {
         return "Pegou a bolinha";
