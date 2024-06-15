@@ -4,6 +4,7 @@ import com.sun.org.apache.bcel.internal.generic.SWITCH;
 
 public class Cachorro {
     // ATRIBUTOS
+    static int numeroDeCachorros;
     private String nome;
     private String cor;
     private int altura;
@@ -12,7 +13,6 @@ public class Cachorro {
     private String estadoDeEspirito;
 
     // CONSTRUTOR PADRÃO
-    public Cachorro(){}
 
     // CONSTRUTORES ADICIONADOS
     public Cachorro(String nome, String cor, int altura, double peso, int tamanhoDoRabo, String estadoDeEspirito) {
@@ -22,9 +22,20 @@ public class Cachorro {
         this.peso = peso;
         this.tamanhoDoRabo = tamanhoDoRabo;
         this.estadoDeEspirito = estadoDeEspirito;
+
+        numeroDeCachorros++;
     }
 
     // MÉTODOS
+
+    public static int getNumeroDeCachorros() {
+        return numeroDeCachorros;
+    }
+
+    public static void setNumeroDeCachorros(int numeroDeCachorros) {
+        Cachorro.numeroDeCachorros = numeroDeCachorros;
+    }
+
     public String getNome() {
         return this.nome;
     }
@@ -99,4 +110,10 @@ public class Cachorro {
         return this.estadoDeEspirito;
     }
 
+    @Override
+    public String toString() {
+        return "Cachorro{" +
+                "nome='" + nome + '\'' +
+                '}';
+    }
 }
