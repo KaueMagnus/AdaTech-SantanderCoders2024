@@ -9,9 +9,10 @@ Este repositório contém meus exercícios e projetos desenvolvidos durante o cu
 - **Módulo 4:** Programação Orientada a Objetos Básica em Java
 - **Módulo 5:** Banco de Dados
 - **Módulo 6:** Introdução à Estrutura de Dados
+- **Módulo 7:** Introduçáo a algoritmos
 
 ## Módulo em andamento
-- **Módulo 7:** Introduçáo a algoritmos
+- **Módulo 8:** Design Patterns em Java
 
 ---
 
@@ -26,6 +27,7 @@ This repository contains my exercises and projects developed during the Santande
 - **Module 4:** Basic Object-Oriented Programming in Java
 - **Module 5:** Databases
 - **Module 6:** Introduction to Data Structures
+- **Module 7:** Introduction to algorithms
 
 ## Module in Progress
-- **Module 7:** Introduction to algorithms
+- **Module 8:** Design Patterns in Java
